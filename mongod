@@ -1,0 +1,1 @@
+mongod --bind_ip=$IP --dbpath=data --nojournal --rest -v --logpath data/server1.log --logappend
