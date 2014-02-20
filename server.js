@@ -28,7 +28,7 @@ if(env === 'development'){
     mongoose.connect('mongodb://127.3.47.1:27017/multivision');
 }
 else{
-    mongoose.connect('mongodb://localhost/multivision');
+    mongoose.connect('mongodb://usr_ferdy:trusted33@troup.mongohq.com:10024/meandb');
 }
 
 var db = mongoose.connection;
