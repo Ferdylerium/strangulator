@@ -24,17 +24,19 @@ app.configure(function() {
   app.use(express.static(__dirname + '/public'));
 });
 
-if(env === 'development'){
+/*if(env === 'development'){
     mongoose.connect('mongodb://127.3.47.1:27017/multivision');
 }
 else{
     mongoose.connect('mongodb://usr_ferdy:trusted33@troup.mongohq.com:10024/meandb');
-}
+}*/
+
+mongoose.connect('mongodb://usr_ferdy:trusted33@troup.mongohq.com:10024/meandb');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error...'));
 db.once('open', function callback() {
-  console.log('db opened');
+  console.log('db opened ' + db);
 });
 var messageSchema = mongoose.Schema({message: String});
 var Message = mongoose.model('Message', messageSchema);
