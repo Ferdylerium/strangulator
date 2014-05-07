@@ -10,7 +10,7 @@ module.exports={
     },
     production: {
         rootPath: rootPath,
-        db: "mongodb://usr_ferdy:trusted33@troup.mongohq.com:10024/meandb",
+        db: "mongodb://usr_****:****33@troup.mongohq.com:10024/meandb",
         port: port
     }
 }
