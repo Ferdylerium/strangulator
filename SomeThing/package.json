@@ -1,0 +1,19 @@
+{
+  "name": "SomeThing",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.1.1",
+    "mongoose": "~3.8.8",
+    "jade": "~1.3.1",
+    "body-parser": "~1.0.2",
+    "cookie-parser": "~1.0.1",
+    "session": "~0.1.0"
+  }
+}
